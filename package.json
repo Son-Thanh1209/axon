@@ -1,7 +1,7 @@
 {
   "name": "axon",
-  "displayName": "axon",
-  "description": "This is axon",
+  "displayName": "Axon",
+  "description": "Axon - Skills & Agents Manager",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.117.0"
@@ -15,27 +15,22 @@
     "viewsContainers": {
       "activitybar": [
         {
-          "id": "axon-sidebar",
+          "id": "axon-container",
           "title": "Axon",
           "icon": "resources/icon.svg"
         }
       ]
     },
     "views": {
-      "axon-sidebar": [
+      "axon-container": [
         {
           "type": "webview",
-          "id": "axon.mainView",
-          "name": "Axon"
+          "id": "axonSidebar",
+          "name": "Axon",
+          "title": "Axon"
         }
       ]
-    },
-    "commands": [
-      {
-        "command": "axon.helloWorld",
-        "title": "Hello World"
-      }
-    ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
